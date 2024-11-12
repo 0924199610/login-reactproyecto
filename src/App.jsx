@@ -17,7 +17,7 @@ function cambiarClave(evento) {
   setclave(evento.target.value)
 }
 
-function ingresar() {
+function Ingresar() {
  if (usuario == 'jsanchez' && clave =='123456'){
   alert('ingresaste')
   setlogueado(true)
@@ -35,7 +35,7 @@ return <Conversor />
     <h1>Inicio de sesion</h1>
     <input placeholder='Usuario'type="text" name="usuario" id="usuario" value={usuario} onChange={cambiarUsuario}/>
     <input placeholder='Clave'type="password" name="clave" id="clave" value={clave}  onChange={cambiarClave}/>
-    <button onClick={ingresar}>ingresar</button>
+    <button onClick={Ingresar}>Ingresar</button>
 
     </>
   )
